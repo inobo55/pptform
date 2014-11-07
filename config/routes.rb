@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  get 'ppt/form'
+
+  get 'ppt/fetch' # DBから全てのppt情報取得
+  
+  post 'ppt/post' => 'ppt#post' # DBにppt情報を保存
+  
+  get 'ppt/form' # フォーム表示
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

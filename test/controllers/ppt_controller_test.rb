@@ -6,4 +6,14 @@ class PptControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should get post" do
+    get :post
+    assert_response :success
+  end
+
+  test "should get fetch" do
+    get :fetch
+    assert_response :success
+  end
+
 end
