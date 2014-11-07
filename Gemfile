@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem "paperclip"
+#http://ruby-rails.hatenadiary.com/entry/20140716/1405443484
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'

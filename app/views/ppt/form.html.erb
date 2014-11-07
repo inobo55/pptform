@@ -1,7 +1,20 @@
 <h1>Ppt#form</h1>
 <p>Find me in appviews/ppt/form.html.erb</p>
 
-
-<%= form_tag("/post",method:"post") %>
-
+<!-- 
+http://ruby-rails.hatenadiary.com/entry/20140716/1405443484
+-->
+<%= form_for @ppt, 
+	:html => {:multipart => true} ,
+	:url => {:action => 'post'} do |f| %>
+	<div class="field">
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+	<div class="field">
+		<%= f.file_field :file %>
+	</div>
+	<div class="actions">
+		<%= f.submit %>
+	</div>
 <% end %>
